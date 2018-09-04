@@ -4,7 +4,7 @@ $(document).ready(function () {
     let skills = $('.skills__level'),
         skillPercent = skills.find('p'),
         menu = $('.header__menu-list'),
-        menuItem = menu.find('header__menu-item'),
+        menuItem = menu.find('.header__menu-item'),
         portfolioButtons = $('.portfolio__button'),
         portfolioItems = $('.portfolio__item'),
         itemsAnimated = false,
@@ -25,8 +25,13 @@ $(document).ready(function () {
         $(this).toggleClass('burger__active');
     });
     
-    menuItem.on('click', function () {
-        console.log($(this))
+    menuItem.on('click', function (e) {
+        e.preventDefault();
+        let id = $(this).find('a').attr('href');
+        let scroll = $(`${id}`).offset().top;
+        $('html,body').animate({
+            scrollTop: scroll
+        }, "slow");
     });
 
     portfolioButtons.on('click', function () {
