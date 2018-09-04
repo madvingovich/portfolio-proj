@@ -58,6 +58,11 @@ gulp.task('images', () => {
         .pipe(gulp.dest('public/img'));
 });
 
+gulp.task('fonts', () => {
+    return gulp.src('front-end/fonts/**.*')
+        .pipe(gulp.dest('public/fonts'));
+});
+
 gulp.task('clean', () => {
     return del('public');
 });
@@ -79,11 +84,11 @@ gulp.task('watch', () => {
 gulp.task('develop',
     gulp.series(
         'clean',
-        gulp.parallel('jq','js','html','styles','images'),
+        gulp.parallel('jq','js','html','styles','images','fonts'),
         gulp.parallel('watch', 'serve'))
 );
 
-gulp.task('build',gulp.series('clean',gulp.parallel('jq','js','html','styles','images')));
+gulp.task('build',gulp.series('clean',gulp.parallel('jq','js','html','styles','images','fonts')));
 
 
 
