@@ -1,0 +1,122 @@
+.team {
+  background-color: #e7f1f8;
+  color: $dark;
+  & .hide {
+    background: #17c2a4;
+  }
+  & .section__item {
+    transform: translate(0,-80px);
+  }
+  &__header {
+    & h2:after {
+      background-color: #bdd1df;
+      opacity: 0.75;
+    }
+  }
+  .section__position {
+    color: #30bae7;
+    line-height: 18px;
+    letter-spacing: 0.32px;
+    margin-top: 13px;
+  }
+  & .section__header p {
+    margin-top: 1.7em;
+  }
+  &__icons {
+    @include flex-center;
+    margin-top: 27px;
+  }
+  &__icon {
+    display: block;
+    background-color: #bdd1df;
+    width: 32px;
+    height: 32px;
+    @include flex-center;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      background: #6BBADF;
+    }
+  }
+}
+
+// SKILLS
+
+.skills {
+  color: $dark;
+  padding: 101px 0 117px;
+  & .hide {
+    background: #e7f1f8;
+  }
+  & .section__item {
+    transform: translate(-200px ,0);
+  }
+  & .section__content {
+    margin-top: 79px;
+  }
+  &__level {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 50%;
+    @include flex-center;
+    font-size: 3.125em;
+    overflow: hidden;
+    position: relative;
+    &_1 {
+      background: #30bae7;
+    }
+    &_2 {
+      background: #d74680;
+    }
+    &_3 {
+      background: #15c7a8;
+    }
+    &_4 {
+      background: #eb7d4b;
+    }
+    & p {
+      position: absolute;
+      z-index: 10;
+      background: #fff;
+      width: 83%;
+      height: 83%;
+      border-radius: 50%;
+      @include flex-center;
+      vertical-align: bottom;
+      & span {
+        font-size: 2rem;
+      }
+    }
+  }
+  & .section__item h3 {
+    font-size: 1.5em;
+    letter-spacing: 0.48px;
+    margin-top: 21px;
+    text-transform: uppercase;
+  }
+}
+.diagram {
+  background: #dfe8ed;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transform: rotate(0deg);
+  transition: 1.2s linear;
+}
+.diagram-fast {
+  transition: .6s linear;
+}
+.diagram-momental {
+  transition: 0s;
+}
+.diagram-right {
+  left: 50%;
+  transform-origin: left;
+}
+.diagram-left {
+  left: 0;
+  transform-origin: right;
+}

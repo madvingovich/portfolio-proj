@@ -1,0 +1,15 @@
+
+.services {
+  & .hide {
+    background: #87509c;
+  }
+  background-color: #17c2a4;
+  & .section__item {
+    &:nth-child(odd) {
+      transform: translate(0,-50px);
+    }
+    &:nth-child(even) {
+      transform: translate(0,50px);
+    }
+  }
+}

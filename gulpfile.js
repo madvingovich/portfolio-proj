@@ -15,7 +15,6 @@ const
     htmlmin = require('gulp-minify-html'),
     uglify = require('gulp-uglify-es').default;
 
-let isDevelopment = false;
 
 
 gulp.task('html', () => {
@@ -30,9 +29,7 @@ gulp.task('styles', () => {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulpIf(isDevelopment, sourcemaps.init()))
         .pipe(scss())
-        .pipe(gulpIf(isDevelopment, sourcemaps.write()))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('public/css'));

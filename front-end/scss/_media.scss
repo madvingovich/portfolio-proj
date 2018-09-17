@@ -1,0 +1,231 @@
+@media only screen and (max-width: 1100px) {
+  .header__info h1 {
+    font-size: 2em;
+  }
+  .review {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .reviews  {
+    padding: 50px 0 150px;
+  }
+  .reviews .section__item_large {
+    width: 45%;
+  }
+  .reviews__content {
+    padding: 0 40px;
+  }
+  .reviews__item {
+    margin-bottom: 55px;
+  }
+  .contact-us {
+    padding: 50px 20px 50px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  body {
+    font-size: 15px;
+  }
+  .header__menu-list {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .burger {
+    display: block;
+  }
+  .header__menu-list {
+    display: block;
+    flex-direction: column;
+    background: #c64dc7;
+    position: absolute;
+    right: 40px;
+    overflow: hidden;
+    padding: 5px;
+    width: 0;
+    opacity: 0;
+    transition: .3s;
+  }
+  .header__menu-item {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .services .section__content {
+    flex-wrap: wrap;
+  }
+  .services .section__item_small {
+    width: 50%;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  .team .section__content {
+    flex-wrap: wrap;
+  }
+  .team .section__item {
+    width: 50%;
+    margin-bottom: 90px;
+  }
+  .team .section__info  {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+  .header {
+    padding: 3em 1em;
+    &__logo img {
+      width: 85px;
+    }
+  }
+  .button_large {
+    width: 210px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .services .section__item_small {
+    width: 50%;
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .skills__level {
+    width: 140px;
+    height: 140px;
+  }
+  .portfolio {
+    padding: 50px 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .header__info h1 {
+    font-size: 1.8em;
+  }
+  .header__menu-item {
+    padding: .3125em .5em;
+  }
+  section {
+    padding: 30px 0 30px;
+  }
+  .team .section__info  {
+    font-size: 1rem;
+  }
+  .skills {
+    padding: 50px 0 0;
+  }
+  .skills .section__content {
+    flex-wrap: wrap;
+  }
+  .skills .section__item {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .skills__level {
+    width: 170px;
+    height: 170px;
+  }
+  .reviews .section__item_large {
+    width: 100%;
+  }
+  .review {
+    font-size: 1.4em;
+  }
+  .reviews__content {
+    margin-top: 30px;
+  }
+  .contact-us .section__header p {
+    width: 350px;
+    margin: 30px auto;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .header__info h1 {
+    line-height: 1.5em;
+    font-size: 1.5em;
+  }
+  .services .section__item_small {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+  }
+  .section .section__header p {
+    width: 320px;
+    margin: 1.625em auto 0;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  .services .section__logo {
+    margin-bottom: 0;
+  }
+  .team .section__header p {
+    width: 320px;
+    margin: 1.7em auto 0;
+  }
+  .team .section__content {
+    flex-wrap: wrap;
+  }
+  .team .section__item {
+    width: 100%;
+  }
+  .team .section__info  {
+    font-size: 1.2rem;
+  }
+  .skills__level {
+    width: 150px;
+    height: 150px;
+  }
+  .skills .section__item h3 {
+    font-size: 1.2em;
+  }
+  .portfolio__button {
+    width: 70px;
+    height: 30px;
+  }
+  .portfolio__content {
+    padding:0 40px;
+  }
+  .portfolio .section__item_large {
+    width: 100%;
+  }.reviews__content {
+     padding: 0 20px;
+   }
+  .review {
+    margin-left: auto;
+  }
+  .reviews__item-description {
+    font-size: .9em;
+  }
+  .contact-us form input, .contact-us form textarea {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .contact-us .section__header p {
+    width: 265px;
+  }
+
+}
+@media only screen and (max-width: 400px) {
+  .team h2 {
+    font-size: 1.4em;
+  }
+  .skills__level {
+    width: 130px;
+    height: 130px;
+  }
+  .portfolio__button {
+    width: 55px;
+    height: 30px;
+    font-size: .9em;
+  }
+  .portfolio__content {
+    padding:0 20px;
+  }
+}

@@ -1,0 +1,44 @@
+.contact-us {
+  background: #3c5499;
+  padding-bottom: 115px;
+  & .hide {
+    background: #d74680;
+  }
+  & form {
+    margin-top: 74px;
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0,-100px);
+    & input, textarea {
+      width: 37.5%;
+      margin: 0 1.7%;
+      padding: 17px 23px;
+      border: none;
+      background: #273a71;
+      color: #fff;
+      font-size: 1.125em;
+      &::-webkit-input-placeholder {color:#fff;}
+      &::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+      &:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+      &:-ms-input-placeholder      {color:#fff;}
+    }
+    & textarea {
+      display: block;
+      width: 78.8%;
+      margin: 28px auto;
+      resize: none;
+      height: 200px;
+    }
+  }
+  &__button {
+    border: none;
+    color: #fff;
+    margin: 59px auto 0;
+    background: #30bae7;
+    border-bottom: 4px solid #299ec4;
+    &:hover {
+      border-bottom:4px solid transparent;
+      border-top:4px solid #299ec4;
+    }
+  }
+}
