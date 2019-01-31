@@ -15,7 +15,7 @@ const
     htmlmin = require('gulp-minify-html'),
     uglify = require('gulp-uglify-es').default;
 
-
+let isDevelopment = false;
 
 gulp.task('html', () => {
     return gulp.src('front-end/index.html')
